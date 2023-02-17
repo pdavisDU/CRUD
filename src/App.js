@@ -3,11 +3,17 @@ import { Button } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 
 function App() {
-  const navigate = useNavigate;
+  const navigate = useNavigate();
   return (
-    <div className="App">
+    <div style={{ width: "90%", margin: "auto auto", textAlign: "center" }}>
       <h1>Home page</h1>
-      <Button onClick={() => navigate("create")}>NEXT</Button>
+      <Button
+        variant="outline-dark"
+        style={{ width: "100%" }}
+        onClick={() => navigate("create")}
+      >
+        NEXT
+      </Button>
     </div>
   );
 }
